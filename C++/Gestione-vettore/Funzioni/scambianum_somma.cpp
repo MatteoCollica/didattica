@@ -20,12 +20,12 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 //l'asterisco indica che stiamo lavorando su dei puntatori a delle locazioni di memoria
 void scambia_num(int *A, int *B) {
 	int scambio = *A; //variabile di comodo che useremo per mantenere uno dei due numeri prima di cambiarlo con l'altro per non perderlo
-	*A = *B; 		  //l'indirizzo di memoria contenuto dalla posizione assume quindi l'altro numero
-	*B = scambio; 	  //mentre l'indirizzo di memoria contenuto dall'altra posizione assume il numero che avevamo salvato
+	*A = *B;          //l'indirizzo di memoria contenuto dalla posizione assume quindi l'altro numero
+	*B = scambio;     //mentre l'indirizzo di memoria contenuto dall'altra posizione assume il numero che avevamo salvato
 }
 
 int somma(int vet[], int d) {
-  int S = 0, i; 				      //la somma inizia da un valore 0 a cui andremo ad aggiungere(sommare) i numeri contenuti nelle posizioni
+  int S = 0, i;
   for(i = 0; i < d; i++) S += vet[i];
   return S;
 }

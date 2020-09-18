@@ -148,14 +148,14 @@ int main () {
 				break;
 			
 			case 15: //M.C.D tra i numeri della sequenza
-				R = MCD(vet[0], vet[1]); 				   //il primo M.C.D (primo e secondo numero della sequenza)
+				R = MCD(vet[0], vet[1]);                   //il primo M.C.D (primo e secondo numero della sequenza)
 				for(i = 2; i < d; i++) R = MCD(R, vet[i]); //dal secondo M.C.D in poi si trova con il M.C.D precedente e il numero attuale
 				
 				cout << "Il Massimo Comune Divisore tra i numeri della sequenza e' " << R << "\n";
 				break;
 			
 			case 16: //m.c.m tra i numeri della sequenza
-				R = mcm(vet[0], vet[1]); 			   	   //il primo m.c.m (primo e secondo numero della sequenza)
+				R = mcm(vet[0], vet[1]);                   //il primo m.c.m (primo e secondo numero della sequenza)
 				for(i = 2; i < d; i++) R = mcm(R, vet[i]); //dal secondo m.c.m in poi si trova con il M.C.D precedente e il numero attuale
 
 				cout << "Il minimo comune multiplo tra i numeri della sequenza e' " << R << "\n";

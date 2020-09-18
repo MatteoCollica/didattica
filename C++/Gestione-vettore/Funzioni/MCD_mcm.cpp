@@ -31,11 +31,11 @@ long MCD(int A, int B) {
 }
 
 long mcm(int A, int B) {
-	int R = A; 				  //inizializzo e assegno a una variabile che chiamo mcm uno dei due numeri
+	int R = A;
 	while(R % B != 0) {
 		R += A;
 	}
 	
-	//finché il resto della divisione tra il primo numero e l'altro è diverso da 0 aggiungo il numero alla variabile mcm
+	//finché il resto della divisione tra il primo numero e l'altro è diverso da 0 aggiungo il numero alla variabile R
 	return R;
 }
