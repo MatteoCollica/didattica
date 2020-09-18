@@ -21,10 +21,10 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 long MCD(int A, int B) {
 	int DIV = 1, R; //inizio a dividere a partire da 1, il quale in mancanza di altri divisori possibili sarà il M.C.D
 
-	while(DIV <= A && DIV <= B) { 				//finché il divisore non supera uno dei due numeri
+	while(DIV <= A && DIV <= B) {               //finché il divisore non supera uno dei due numeri
 		if (A % DIV == B % DIV && B % DIV == 0) //se DIV e' un divisore comune ad entrambi
-			R = DIV; 							//memorizza in R l'attuale DIVisore massimo raggiunto
-		DIV++; 									//incremento il divisore
+			R = DIV;                            //memorizza in R l'attuale DIVisore massimo raggiunto
+		DIV++;                                  //incremento il divisore
 	}
 
 	return R;
